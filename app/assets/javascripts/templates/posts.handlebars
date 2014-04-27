@@ -1,0 +1,14 @@
+<h1>Posts</h1>
+
+<ul>
+	<li>
+		{{#link-to 'posts.new'}}+ new User {{/link-to}}
+	</li>
+	{{#each controller}}
+		<li>
+			{{#link-to 'posts.edit' this}}{{title}}{{/link-to}}
+		</li>
+	{{/each}}
+</ul>
+
+{{outlet}}

@@ -1,0 +1,13 @@
+<form {{action 'save' on='submit'}}>
+{{input type="text" value=post.title}}
+{{input type="text" value=post.body}}
+
+{{#if isEditing}}
+	<button type="button" {{action 'delete'}}>delete</button>
+{{/if}}
+
+<button type='submit'>Save</button>
+
+</form>
+
+
