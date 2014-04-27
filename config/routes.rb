@@ -8,6 +8,8 @@ EmberRails::Application.routes.draw do
 		end
 	end
 
+	devise_for :users, :controllers => { :sessions => "json_sessions" }
+
 	root "ember#start"
 
   # The priority is based upon order of creation: first created -> highest priority.

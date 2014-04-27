@@ -32,7 +32,14 @@ GEM
       ember-source
       execjs
       handlebars-source
+    bcrypt (3.1.7)
     builder (3.1.4)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     ember-data-source (0.14)
       ember-source
     ember-rails (0.14.1)
@@ -64,6 +71,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.2)
+    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
@@ -113,11 +121,14 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  devise
   ember-rails
   ember-source (= 1.5.0)
   jbuilder (~> 1.2)
